@@ -6,7 +6,7 @@ import ActivityTypeFilterComponent from "@/app/search/components/activity-type-f
 import FilterSummaryComponent from "@/app/search/components/filter-summary/filter-summary.component";
 import CityFilterComponent from "@/app/search/components/city-filter/city-filter.component";
 import StatsComponent from "@/app/search/components/stats/stats.component";
-import FiltersCapsuleComponent from "@/app/search/components/mobile-filters/filters-capsule.component";
+// import FiltersCapsuleComponent from "@/app/search/components/mobile-filters/filters-capsule.component";
 
 import FiltersProvider from "@/app/search/providers/filters/filters.provider";
 import ActivityProvider from "@/app/search/providers/activity/activity.provider";
@@ -35,9 +35,9 @@ export default async function SearchPage({
           <div className={styles.search}>
             <GlobalSearchBoxComponent />
           </div>
-          <div className={styles["mobile-filters"]}>
-            <FiltersCapsuleComponent />
-          </div>
+          {/*<div className={styles["mobile-filters"]}>*/}
+          {/*  <FiltersCapsuleComponent />*/}
+          {/*</div>*/}
           <div className={styles.filters}>
             <FilterSummaryComponent />
             <ActivityTypeFilterComponent />
